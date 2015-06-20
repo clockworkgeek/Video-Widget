@@ -73,4 +73,64 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             </loop>
         </parameters>
     </clockworkgeek_videowidget_youtube>
+
+    <clockworkgeek_videowidget_vimeo type="clockworkgeek_videowidget/vimeo" module="clockworkgeek_videowidget" translate="name description">
+        <name>Vimeo Video</name>
+        <description>Embed a Vimeo video</description>
+        <parameters>
+            <code translate="label description">
+                <visible>1</visible>
+                <required>1</required>
+                <label>Video Code</label>
+                <type>text</type>
+                <description><![CDATA[The number seen in Vimeo URLs like <code class="nobr">https://vimeo.com/<strong><em>XXXXXX</em></strong></code>]]></description>
+            </code>
+            <aspect_ratio translate="label">
+                <visible>1</visible>
+                <label>Aspect Ratio</label>
+                <type>select</type>
+                <value>widescreen</value>
+                <values>
+                    <widescreen translate="label">
+                        <value>widescreen</value>
+                        <label>16:9</label>
+                    </widescreen>
+                    <normal translate="label">
+                        <value>normal</value>
+                        <label>4:3</label>
+                    </normal>
+                </values>
+            </aspect_ratio>
+            <autoplay translate="label">
+                <visible>1</visible>
+                <label>Auto-play</label>
+                <type>select</type>
+                <values>
+                    <default translate="label">
+                        <value></value>
+                        <label>No</label>
+                    </default>
+                    <play translate="label">
+                        <value>1</value>
+                        <label>Yes</label>
+                    </play>
+                </values>
+            </autoplay>
+            <loop translate="label">
+                <visible>1</visible>
+                <label>Loop</label>
+                <type>select</type>
+                <values>
+                    <default translate="label">
+                        <value></value>
+                        <label>No</label>
+                    </default>
+                    <play translate="label">
+                        <value>1</value>
+                        <label>Yes</label>
+                    </play>
+                </values>
+            </loop>
+        </parameters>
+    </clockworkgeek_videowidget_vimeo>
 </widgets>
