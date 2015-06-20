@@ -53,6 +53,10 @@ class Clockworkgeek_VideoWidget_Block_Youtube extends Mage_Core_Block_Template
             if ($this->getAutoplay()) {
                 $code .= '&autoplay=1';
             }
+        
+            if ($this->getLoop()) {
+                $code .= '&loop=1';
+            }
         }
 
         return (string) $code;

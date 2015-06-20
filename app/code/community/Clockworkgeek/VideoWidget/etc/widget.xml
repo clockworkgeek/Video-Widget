@@ -56,6 +56,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     </play>
                 </values>
             </autoplay>
+            <loop translate="label">
+                <visible>1</visible>
+                <label>Loop</label>
+                <type>select</type>
+                <values>
+                    <default translate="label">
+                        <value></value>
+                        <label>No</label>
+                    </default>
+                    <play translate="label">
+                        <value>1</value>
+                        <label>Yes</label>
+                    </play>
+                </values>
+            </loop>
         </parameters>
     </clockworkgeek_videowidget_youtube>
 </widgets>
