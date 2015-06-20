@@ -1,0 +1,16 @@
+{
+  "name":"clockworkgeek/videowidget",
+  "type":"magento-module",
+  "license":"GPL",
+  "homepage":"https://github.com/clockworkgeek/Video-Widget",
+  "description":"Embed Youtube or Vimeo in any block location",
+  "authors":[
+    {
+      "name":"Daniel Deady",
+      "email":"daniel@clockworkgeek.com"
+    }
+  ],
+  "suggest":{
+    "magento-hackathon/magento-composer-installer":"*"
+  }
+}
