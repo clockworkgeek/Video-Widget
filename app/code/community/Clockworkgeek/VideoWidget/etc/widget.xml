@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets>
+<!--
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+    <clockworkgeek_videowidget_youtube type="clockworkgeek_videowidget/youtube" module="clockworkgeek_videowidget" translate="name description">
+        <name>Youtube Video</name>
+        <description>Embed a Youtube video</description>
+        <parameters>
+            <code translate="label description">
+                <visible>1</visible>
+                <required>1</required>
+                <label>Video Code</label>
+                <type>text</type>
+                <description><![CDATA[The characters seen at the end of Youtube URLs like <code class="nobr">https://www.youtube.com/watch?v=<strong><em>XXXXXX</em></strong></code>]]></description>
+            </code>
+            <aspect_ratio translate="label">
+                <visible>1</visible>
+                <required>1</required>
+                <label>Aspect Ratio</label>
+                <type>select</type>
+                <value>widescreen</value>
+                <values>
+                    <widescreen translate="label">
+                        <value>widescreen</value>
+                        <label>16:9</label>
+                    </widescreen>
+                    <normal translate="label">
+                        <value>normal</value>
+                        <label>4:3</label>
+                    </normal>
+                </values>
+            </aspect_ratio>
+        </parameters>
+    </clockworkgeek_videowidget_youtube>
+</widgets>
