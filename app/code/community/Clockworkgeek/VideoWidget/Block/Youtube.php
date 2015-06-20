@@ -31,10 +31,10 @@ class Clockworkgeek_VideoWidget_Block_Youtube extends Mage_Core_Block_Template
         $code = parent::getCode();
         // sanitise user input in case user cannot read instructions
         switch (true) {
-            case preg_match('#^(\w{8,12})$#', $code, $match):
-            case preg_match('#/watch?v=(\w{8,12})\b#', $code, $match):
-            case preg_match('#/embed/(\w{8,12})\b#', $code, $match):
-            case preg_match('#//youtu.be/(\w{8,12})\b#', $code, $match):
+            case preg_match('#^([-\w]{8,12})$#', $code, $match):
+            case preg_match('#/watch\?v=([-\w]{8,12})\b#', $code, $match):
+            case preg_match('#/embed/([-\w]{8,12})\b#', $code, $match):
+            case preg_match('#//youtu.be/([-\w]{8,12})\b#', $code, $match):
                 $code = $match[1];
                 break;
             default:
