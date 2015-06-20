@@ -65,4 +65,9 @@ class Clockworkgeek_VideoWidget_Block_Youtube extends Mage_Core_Block_Template
         }
         return sprintf('%.4g%%', 100 / $ratio);
     }
+
+    protected function _toHtml()
+    {
+        return $this->getCode() ? parent::_toHtml() : '';
+    }
 }
