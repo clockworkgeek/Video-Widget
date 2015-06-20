@@ -1,0 +1,4 @@
+app/code/community/Clockworkgeek/VideoWidget app/code/community/Clockworkgeek/VideoWidget
+app/etc/modules/Clockworkgeek_VideoWidget.xml app/etc/modules/Clockworkgeek_VideoWidget.xml
+app/design/frontend/base/default/template/clockworkgeek/videowidget app/design/frontend/base/default/template/clockworkgeek/videowidget
+app/locale/en_US/clockworkgeek/videowidget.csv app/locale/en_US/clockworkgeek/videowidget.csv
