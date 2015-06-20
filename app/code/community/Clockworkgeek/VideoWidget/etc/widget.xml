@@ -27,7 +27,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             </code>
             <aspect_ratio translate="label">
                 <visible>1</visible>
-                <required>1</required>
                 <label>Aspect Ratio</label>
                 <type>select</type>
                 <value>widescreen</value>
@@ -42,6 +41,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     </normal>
                 </values>
             </aspect_ratio>
+            <autoplay translate="label">
+                <visible>1</visible>
+                <label>Auto-play</label>
+                <type>select</type>
+                <values>
+                    <default translate="label">
+                        <value></value>
+                        <label>No</label>
+                    </default>
+                    <play translate="label">
+                        <value>1</value>
+                        <label>Yes</label>
+                    </play>
+                </values>
+            </autoplay>
         </parameters>
     </clockworkgeek_videowidget_youtube>
 </widgets>

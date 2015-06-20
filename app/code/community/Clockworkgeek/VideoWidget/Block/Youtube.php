@@ -49,6 +49,10 @@ class Clockworkgeek_VideoWidget_Block_Youtube extends Mage_Core_Block_Template
         if (($code = $this->getCode())) {
             // hide unnecessary features
             $code = "https://www.youtube.com/embed/{$code}?rel=0&showinfo=0";
+
+            if ($this->getAutoplay()) {
+                $code .= '&autoplay=1';
+            }
         }
 
         return (string) $code;
